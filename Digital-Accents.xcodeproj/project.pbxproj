@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4956FEF823C4BFC200BD5F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */; };
+		4956FEFA23C4BFC200BD5F25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */; };
+		4956FEFD23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEFB23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld */; };
+		4956FEFF23C4BFC200BD5F25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEFE23C4BFC200BD5F25 /* ContentView.swift */; };
+		4956FF0123C4BFC400BD5F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0023C4BFC400BD5F25 /* Assets.xcassets */; };
+		4956FF0423C4BFC400BD5F25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0323C4BFC400BD5F25 /* Preview Assets.xcassets */; };
+		4956FF0723C4BFC400BD5F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */; };
+		4956FF1223C4BFC400BD5F25 /* Digital_AccentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */; };
+		4956FF1D23C4C68B00BD5F25 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4956FF0E23C4BFC400BD5F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4956FEEC23C4BFC200BD5F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4956FEF323C4BFC200BD5F25;
+			remoteInfo = "Digital-Accents";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital-Accents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4956FEFC23C4BFC200BD5F25 /* Digital_Accents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Digital_Accents.xcdatamodel; sourceTree = "<group>"; };
+		4956FEFE23C4BFC200BD5F25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4956FF0023C4BFC400BD5F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4956FF0323C4BFC400BD5F25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4956FF0623C4BFC400BD5F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4956FF0823C4BFC400BD5F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4956FF0D23C4BFC400BD5F25 /* Digital-AccentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital-AccentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digital_AccentsTests.swift; sourceTree = "<group>"; };
+		4956FF1323C4BFC400BD5F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4956FEF123C4BFC200BD5F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4956FF0A23C4BFC400BD5F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4956FEEB23C4BFC200BD5F25 = {
+			isa = PBXGroup;
+			children = (
+				4956FEF623C4BFC200BD5F25 /* Digital-Accents */,
+				4956FF1023C4BFC400BD5F25 /* Digital-AccentsTests */,
+				4956FEF523C4BFC200BD5F25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4956FEF523C4BFC200BD5F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */,
+				4956FF0D23C4BFC400BD5F25 /* Digital-AccentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4956FEF623C4BFC200BD5F25 /* Digital-Accents */ = {
+			isa = PBXGroup;
+			children = (
+				4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */,
+				4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */,
+				4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */,
+				4956FEFE23C4BFC200BD5F25 /* ContentView.swift */,
+				4956FF0023C4BFC400BD5F25 /* Assets.xcassets */,
+				4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */,
+				4956FF0823C4BFC400BD5F25 /* Info.plist */,
+				4956FEFB23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld */,
+				4956FF0223C4BFC400BD5F25 /* Preview Content */,
+			);
+			path = "Digital-Accents";
+			sourceTree = "<group>";
+		};
+		4956FF0223C4BFC400BD5F25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4956FF0323C4BFC400BD5F25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4956FF1023C4BFC400BD5F25 /* Digital-AccentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */,
+				4956FF1323C4BFC400BD5F25 /* Info.plist */,
+			);
+			path = "Digital-AccentsTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4956FEF323C4BFC200BD5F25 /* Digital-Accents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4956FF1623C4BFC400BD5F25 /* Build configuration list for PBXNativeTarget "Digital-Accents" */;
+			buildPhases = (
+				4956FEF023C4BFC200BD5F25 /* Sources */,
+				4956FEF123C4BFC200BD5F25 /* Frameworks */,
+				4956FEF223C4BFC200BD5F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Digital-Accents";
+			productName = "Digital-Accents";
+			productReference = 4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4956FF0C23C4BFC400BD5F25 /* Digital-AccentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4956FF1923C4BFC400BD5F25 /* Build configuration list for PBXNativeTarget "Digital-AccentsTests" */;
+			buildPhases = (
+				4956FF0923C4BFC400BD5F25 /* Sources */,
+				4956FF0A23C4BFC400BD5F25 /* Frameworks */,
+				4956FF0B23C4BFC400BD5F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4956FF0F23C4BFC400BD5F25 /* PBXTargetDependency */,
+			);
+			name = "Digital-AccentsTests";
+			productName = "Digital-AccentsTests";
+			productReference = 4956FF0D23C4BFC400BD5F25 /* Digital-AccentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4956FEEC23C4BFC200BD5F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Smalli;
+				TargetAttributes = {
+					4956FEF323C4BFC200BD5F25 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					4956FF0C23C4BFC400BD5F25 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4956FEF323C4BFC200BD5F25;
+					};
+				};
+			};
+			buildConfigurationList = 4956FEEF23C4BFC200BD5F25 /* Build configuration list for PBXProject "Digital-Accents" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4956FEEB23C4BFC200BD5F25;
+			productRefGroup = 4956FEF523C4BFC200BD5F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4956FEF323C4BFC200BD5F25 /* Digital-Accents */,
+				4956FF0C23C4BFC400BD5F25 /* Digital-AccentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4956FEF223C4BFC200BD5F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4956FF0723C4BFC400BD5F25 /* LaunchScreen.storyboard in Resources */,
+				4956FF0423C4BFC400BD5F25 /* Preview Assets.xcassets in Resources */,
+				4956FF0123C4BFC400BD5F25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4956FF0B23C4BFC400BD5F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4956FEF023C4BFC200BD5F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4956FEFD23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld in Sources */,
+				4956FEF823C4BFC200BD5F25 /* AppDelegate.swift in Sources */,
+				4956FEFF23C4BFC200BD5F25 /* ContentView.swift in Sources */,
+				4956FF1D23C4C68B00BD5F25 /* KeyboardResponder.swift in Sources */,
+				4956FEFA23C4BFC200BD5F25 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4956FF0923C4BFC400BD5F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4956FF1223C4BFC400BD5F25 /* Digital_AccentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4956FF0F23C4BFC400BD5F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4956FEF323C4BFC200BD5F25 /* Digital-Accents */;
+			targetProxy = 4956FF0E23C4BFC400BD5F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4956FF0623C4BFC400BD5F25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4956FF1423C4BFC400BD5F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4956FF1523C4BFC400BD5F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4956FF1723C4BFC400BD5F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Digital-Accents/Preview Content\"";
+				DEVELOPMENT_TEAM = QX79LNB56B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Digital-Accents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4956FF1823C4BFC400BD5F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Digital-Accents/Preview Content\"";
+				DEVELOPMENT_TEAM = QX79LNB56B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Digital-Accents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4956FF1A23C4BFC400BD5F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QX79LNB56B;
+				INFOPLIST_FILE = "Digital-AccentsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-AccentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital-Accents.app/Digital-Accents";
+			};
+			name = Debug;
+		};
+		4956FF1B23C4BFC400BD5F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QX79LNB56B;
+				INFOPLIST_FILE = "Digital-AccentsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-AccentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital-Accents.app/Digital-Accents";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4956FEEF23C4BFC200BD5F25 /* Build configuration list for PBXProject "Digital-Accents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4956FF1423C4BFC400BD5F25 /* Debug */,
+				4956FF1523C4BFC400BD5F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4956FF1623C4BFC400BD5F25 /* Build configuration list for PBXNativeTarget "Digital-Accents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4956FF1723C4BFC400BD5F25 /* Debug */,
+				4956FF1823C4BFC400BD5F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4956FF1923C4BFC400BD5F25 /* Build configuration list for PBXNativeTarget "Digital-AccentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4956FF1A23C4BFC400BD5F25 /* Debug */,
+				4956FF1B23C4BFC400BD5F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4956FEFB23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4956FEFC23C4BFC200BD5F25 /* Digital_Accents.xcdatamodel */,
+			);
+			currentVersion = 4956FEFC23C4BFC200BD5F25 /* Digital_Accents.xcdatamodel */;
+			path = Digital_Accents.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4956FEEC23C4BFC200BD5F25 /* Project object */;
+}
