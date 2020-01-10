@@ -16,6 +16,29 @@
 		4956FF0723C4BFC400BD5F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */; };
 		4956FF1223C4BFC400BD5F25 /* Digital_AccentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */; };
 		4956FF1D23C4C68B00BD5F25 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */; };
+		49B3F8EE23C82BF700761A82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D723C82BF700761A82 /* icon.png */; };
+		49B3F8EF23C82BF700761A82 /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D823C82BF700761A82 /* icon-76@2x.png */; };
+		49B3F8F023C82BF700761A82 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D923C82BF700761A82 /* icon-40@2x.png */; };
+		49B3F8F123C82BF700761A82 /* icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DA23C82BF700761A82 /* icon-40@3x.png */; };
+		49B3F8F223C82BF700761A82 /* icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DB23C82BF700761A82 /* icon-83.5@2x.png */; };
+		49B3F8F323C82BF700761A82 /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DC23C82BF700761A82 /* icon-small.png */; };
+		49B3F8F423C82BF700761A82 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DD23C82BF700761A82 /* icon-60@3x.png */; };
+		49B3F8F523C82BF700761A82 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DE23C82BF700761A82 /* icon-76.png */; };
+		49B3F8F623C82BF700761A82 /* notification-icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8DF23C82BF700761A82 /* notification-icon~ipad@2x.png */; };
+		49B3F8F723C82BF700761A82 /* notification-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E023C82BF700761A82 /* notification-icon@3x.png */; };
+		49B3F8F823C82BF700761A82 /* notification-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E123C82BF700761A82 /* notification-icon@2x.png */; };
+		49B3F8F923C82BF700761A82 /* icon-small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E223C82BF700761A82 /* icon-small-50@2x.png */; };
+		49B3F8FA23C82BF700761A82 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E323C82BF700761A82 /* icon-72.png */; };
+		49B3F8FB23C82BF700761A82 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E423C82BF700761A82 /* icon-72@2x.png */; };
+		49B3F8FC23C82BF700761A82 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E523C82BF700761A82 /* icon-60@2x.png */; };
+		49B3F8FD23C82BF700761A82 /* notification-icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E623C82BF700761A82 /* notification-icon~ipad.png */; };
+		49B3F8FE23C82BF700761A82 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E723C82BF700761A82 /* icon@2x.png */; };
+		49B3F8FF23C82BF700761A82 /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E823C82BF700761A82 /* icon-40.png */; };
+		49B3F90023C82BF700761A82 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8E923C82BF700761A82 /* Contents.json */; };
+		49B3F90123C82BF700761A82 /* icon-small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8EA23C82BF700761A82 /* icon-small@3x.png */; };
+		49B3F90223C82BF700761A82 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8EB23C82BF700761A82 /* icon-small-50.png */; };
+		49B3F90323C82BF700761A82 /* ios-marketing.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8EC23C82BF700761A82 /* ios-marketing.png */; };
+		49B3F90423C82BF700761A82 /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8ED23C82BF700761A82 /* icon-small@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital-Accents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4956FEF423C4BFC200BD5F25 /* Digital Accents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Accents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4956FEFC23C4BFC200BD5F25 /* Digital_Accents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Digital_Accents.xcdatamodel; sourceTree = "<group>"; };
@@ -42,6 +65,29 @@
 		4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digital_AccentsTests.swift; sourceTree = "<group>"; };
 		4956FF1323C4BFC400BD5F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		49B3F8D723C82BF700761A82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		49B3F8D823C82BF700761A82 /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		49B3F8D923C82BF700761A82 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		49B3F8DA23C82BF700761A82 /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@3x.png"; sourceTree = "<group>"; };
+		49B3F8DB23C82BF700761A82 /* icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-83.5@2x.png"; sourceTree = "<group>"; };
+		49B3F8DC23C82BF700761A82 /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
+		49B3F8DD23C82BF700761A82 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		49B3F8DE23C82BF700761A82 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		49B3F8DF23C82BF700761A82 /* notification-icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification-icon~ipad@2x.png"; sourceTree = "<group>"; };
+		49B3F8E023C82BF700761A82 /* notification-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification-icon@3x.png"; sourceTree = "<group>"; };
+		49B3F8E123C82BF700761A82 /* notification-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification-icon@2x.png"; sourceTree = "<group>"; };
+		49B3F8E223C82BF700761A82 /* icon-small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-50@2x.png"; sourceTree = "<group>"; };
+		49B3F8E323C82BF700761A82 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		49B3F8E423C82BF700761A82 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		49B3F8E523C82BF700761A82 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		49B3F8E623C82BF700761A82 /* notification-icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification-icon~ipad.png"; sourceTree = "<group>"; };
+		49B3F8E723C82BF700761A82 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		49B3F8E823C82BF700761A82 /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		49B3F8E923C82BF700761A82 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		49B3F8EA23C82BF700761A82 /* icon-small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@3x.png"; sourceTree = "<group>"; };
+		49B3F8EB23C82BF700761A82 /* icon-small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-50.png"; sourceTree = "<group>"; };
+		49B3F8EC23C82BF700761A82 /* ios-marketing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-marketing.png"; sourceTree = "<group>"; };
+		49B3F8ED23C82BF700761A82 /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +120,7 @@
 		4956FEF523C4BFC200BD5F25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */,
+				4956FEF423C4BFC200BD5F25 /* Digital Accents.app */,
 				4956FF0D23C4BFC400BD5F25 /* Digital-AccentsTests.xctest */,
 			);
 			name = Products;
@@ -88,6 +134,7 @@
 				4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */,
 				4956FEFE23C4BFC200BD5F25 /* ContentView.swift */,
 				4956FF0023C4BFC400BD5F25 /* Assets.xcassets */,
+				49B3F8D623C82BF700761A82 /* AppIcon.appiconset */,
 				4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */,
 				4956FF0823C4BFC400BD5F25 /* Info.plist */,
 				4956FEFB23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld */,
@@ -113,6 +160,37 @@
 			path = "Digital-AccentsTests";
 			sourceTree = "<group>";
 		};
+		49B3F8D623C82BF700761A82 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				49B3F8D723C82BF700761A82 /* icon.png */,
+				49B3F8D823C82BF700761A82 /* icon-76@2x.png */,
+				49B3F8D923C82BF700761A82 /* icon-40@2x.png */,
+				49B3F8DA23C82BF700761A82 /* icon-40@3x.png */,
+				49B3F8DB23C82BF700761A82 /* icon-83.5@2x.png */,
+				49B3F8DC23C82BF700761A82 /* icon-small.png */,
+				49B3F8DD23C82BF700761A82 /* icon-60@3x.png */,
+				49B3F8DE23C82BF700761A82 /* icon-76.png */,
+				49B3F8DF23C82BF700761A82 /* notification-icon~ipad@2x.png */,
+				49B3F8E023C82BF700761A82 /* notification-icon@3x.png */,
+				49B3F8E123C82BF700761A82 /* notification-icon@2x.png */,
+				49B3F8E223C82BF700761A82 /* icon-small-50@2x.png */,
+				49B3F8E323C82BF700761A82 /* icon-72.png */,
+				49B3F8E423C82BF700761A82 /* icon-72@2x.png */,
+				49B3F8E523C82BF700761A82 /* icon-60@2x.png */,
+				49B3F8E623C82BF700761A82 /* notification-icon~ipad.png */,
+				49B3F8E723C82BF700761A82 /* icon@2x.png */,
+				49B3F8E823C82BF700761A82 /* icon-40.png */,
+				49B3F8E923C82BF700761A82 /* Contents.json */,
+				49B3F8EA23C82BF700761A82 /* icon-small@3x.png */,
+				49B3F8EB23C82BF700761A82 /* icon-small-50.png */,
+				49B3F8EC23C82BF700761A82 /* ios-marketing.png */,
+				49B3F8ED23C82BF700761A82 /* icon-small@2x.png */,
+			);
+			name = AppIcon.appiconset;
+			path = ../../Resources/Assets1.xcassets/AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,7 +208,7 @@
 			);
 			name = "Digital-Accents";
 			productName = "Digital-Accents";
-			productReference = 4956FEF423C4BFC200BD5F25 /* Digital-Accents.app */;
+			productReference = 4956FEF423C4BFC200BD5F25 /* Digital Accents.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4956FF0C23C4BFC400BD5F25 /* Digital-AccentsTests */ = {
@@ -194,9 +272,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B3F8FC23C82BF700761A82 /* icon-60@2x.png in Resources */,
+				49B3F8F823C82BF700761A82 /* notification-icon@2x.png in Resources */,
+				49B3F8FD23C82BF700761A82 /* notification-icon~ipad.png in Resources */,
+				49B3F8FB23C82BF700761A82 /* icon-72@2x.png in Resources */,
+				49B3F8F523C82BF700761A82 /* icon-76.png in Resources */,
+				49B3F8F023C82BF700761A82 /* icon-40@2x.png in Resources */,
+				49B3F8EE23C82BF700761A82 /* icon.png in Resources */,
 				4956FF0723C4BFC400BD5F25 /* LaunchScreen.storyboard in Resources */,
+				49B3F90423C82BF700761A82 /* icon-small@2x.png in Resources */,
 				4956FF0423C4BFC400BD5F25 /* Preview Assets.xcassets in Resources */,
+				49B3F90223C82BF700761A82 /* icon-small-50.png in Resources */,
+				49B3F8F423C82BF700761A82 /* icon-60@3x.png in Resources */,
+				49B3F8FE23C82BF700761A82 /* icon@2x.png in Resources */,
+				49B3F90023C82BF700761A82 /* Contents.json in Resources */,
+				49B3F8FF23C82BF700761A82 /* icon-40.png in Resources */,
+				49B3F8F223C82BF700761A82 /* icon-83.5@2x.png in Resources */,
 				4956FF0123C4BFC400BD5F25 /* Assets.xcassets in Resources */,
+				49B3F8F323C82BF700761A82 /* icon-small.png in Resources */,
+				49B3F8FA23C82BF700761A82 /* icon-72.png in Resources */,
+				49B3F8F923C82BF700761A82 /* icon-small-50@2x.png in Resources */,
+				49B3F8F723C82BF700761A82 /* notification-icon@3x.png in Resources */,
+				49B3F90123C82BF700761A82 /* icon-small@3x.png in Resources */,
+				49B3F8F123C82BF700761A82 /* icon-40@3x.png in Resources */,
+				49B3F8F623C82BF700761A82 /* notification-icon~ipad@2x.png in Resources */,
+				49B3F8EF23C82BF700761A82 /* icon-76@2x.png in Resources */,
+				49B3F90323C82BF700761A82 /* ios-marketing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +481,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Digital Accents";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,9 +501,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Digital Accents";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
