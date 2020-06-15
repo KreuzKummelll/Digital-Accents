@@ -15,7 +15,6 @@
 		4956FF0423C4BFC400BD5F25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0323C4BFC400BD5F25 /* Preview Assets.xcassets */; };
 		4956FF0723C4BFC400BD5F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4956FF0523C4BFC400BD5F25 /* LaunchScreen.storyboard */; };
 		4956FF1223C4BFC400BD5F25 /* Digital_AccentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */; };
-		4956FF1D23C4C68B00BD5F25 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */; };
 		49B3F8EE23C82BF700761A82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D723C82BF700761A82 /* icon.png */; };
 		49B3F8EF23C82BF700761A82 /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D823C82BF700761A82 /* icon-76@2x.png */; };
 		49B3F8F023C82BF700761A82 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B3F8D923C82BF700761A82 /* icon-40@2x.png */; };
@@ -64,7 +63,6 @@
 		4956FF0D23C4BFC400BD5F25 /* Digital-AccentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital-AccentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4956FF1123C4BFC400BD5F25 /* Digital_AccentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digital_AccentsTests.swift; sourceTree = "<group>"; };
 		4956FF1323C4BFC400BD5F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		49B3F8D723C82BF700761A82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		49B3F8D823C82BF700761A82 /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		49B3F8D923C82BF700761A82 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 		4956FEF623C4BFC200BD5F25 /* Digital-Accents */ = {
 			isa = PBXGroup;
 			children = (
-				4956FF1C23C4C68B00BD5F25 /* KeyboardResponder.swift */,
 				4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */,
 				4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */,
 				4956FEFE23C4BFC200BD5F25 /* ContentView.swift */,
@@ -318,7 +315,6 @@
 				4956FEFD23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld in Sources */,
 				4956FEF823C4BFC200BD5F25 /* AppDelegate.swift in Sources */,
 				4956FEFF23C4BFC200BD5F25 /* ContentView.swift in Sources */,
-				4956FF1D23C4C68B00BD5F25 /* KeyboardResponder.swift in Sources */,
 				4956FEFA23C4BFC200BD5F25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

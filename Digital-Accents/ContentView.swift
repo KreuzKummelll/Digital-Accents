@@ -9,23 +9,68 @@
 import SwiftUI
 import AVFoundation
 
+
+enum Languages: String {
+    case enGB = "en-GB", enUS = "en-US"
+    case arAE = "ar-AE"
+    case frFR = "fr-FR", frCA = "fr-CA"
+    case plPL = "pl-PL"
+    case deDE = "de-DE"
+    case koKR = "ko-KR"
+    case heIL = "he-IL"
+    case itIT = "it-IT"
+    case esMX = "es-MX", esES = "es-ES"
+    case svSE = "sv-SE"
+    case hiIN = "hi-IN"
+    case trTR = "tr-TR"
+    case jaJP = "ja-JP"
+    case elGR = "el-GR"
+    case ruRU = "ru-RU"
+    
+    var fullLanguageName : String {
+        switch self {
+        case .arAE: return "Arabic"
+        case .deDE: return "German"
+        case .elGR: return "Greek"
+        case .enGB: return "English (Great Britain)"
+        case .enUS: return "English (United States)"
+        case .esES: return "Spanish (Spain)"
+        case .esMX: return "Spanish (Mexico)"
+        case .koKR: return "Korean"
+        case .frCA: return "French (Canada)"
+        case .frFR: return "French (France)"
+        case .heIL: return "Hebrew"
+        case .hiIN: return "Hindi"
+        case .itIT: return "Italian"
+        case .jaJP: return "Japanese"
+        case .plPL: return "Polish"
+        case .ruRU: return "Russian (Russia)"
+        case .svSE: return "Swedish"
+        case .trTR: return "Turkish"
+            
+        }
+    }
+}
+
 struct ContentView: View {
     
     
     @State var message: String = ""
     
-
     
-    let languages: [[String]] = [
-        ["en-GB", "en-US", "ar-AE"],
-        ["fr-FR", "fr-CA", "pl-PL"],
-        ["de-DE", "fa-IR", "he-IL"],
-        ["it-IT", "es-MX", "es-ES"],
-        ["sv-SE", "hi-IN", "tr-TR"],
-        ["ja-JP", "el-GR", "ru-RU"]
+    
+    let languages: [[Languages]] = [
+        [.enGB, .enUS, .arAE],
+        [.frFR, .frCA, .plPL],
+        [.deDE, .koKR, .heIL],
+        [.itIT, .esMX, .esES],
+        [.svSE, .hiIN, .trTR],
+        [.jaJP, .elGR, .ruRU]
     ]
     
-    @State private var languageSelection = "en-GB"
+    
+    
+    @State private var languageSelection : Languages = .enGB
     
     @State var keyboardOffset : CGFloat = 0
     
@@ -37,12 +82,13 @@ struct ContentView: View {
     
     
     var speechRatePercentageString : String {
-        String(format: "%2f", Double(speechRate * 100))
+        String(format: "%.0f", Double(speechRate * 100))
     }
+    
     var stats: String {
         return String("""
-            Current selection:\n\(languageSelection.uppercased())
-            Rate of Speaking:\n \(speechRatePercentageString)
+            Current selection:\n\(languageSelection.fullLanguageName.capitalized)
+            Rate of Speaking:\n % \(speechRatePercentageString)
             """)
     }
     
@@ -56,16 +102,21 @@ struct ContentView: View {
                     HStack {
                         VStack {
                             Text(stats)
-                                .accessibility(label: Text("\(stats)"))
+                                .font(.system(size: 17, weight: .thin, design: .monospaced))
+                                .accessibility(label: Text("""
+                                    Current selection:\n\(languageSelection.fullLanguageName.capitalized)
+                                    Rate of Speaking:\n \(speechRatePercentageString) %
+                                    """))
+                                .padding(.leading, 5)
                         }.font(.system(size: 10, weight: Font.Weight.medium, design: Font.Design.monospaced))
                         
                         Text("Select Language and Dialect")
-                            .bold()
-                            .font(.system(size: 30, weight: .ultraLight, design: .monospaced))
+                            .font(.system(size: 17, weight: .ultraLight, design: .monospaced))
                             .padding()
                             .border(Color.blue, width: 1)
                             .padding()
-                            .accessibility(label: Text("Select Language and Dialect Button"))
+                            .accessibility(label: Text("Select Language and Dialect"))
+                            .accessibility(addTraits: .isButton)
                             .onTapGesture {
                                 self.showingLanguageSelection = true
                         }
@@ -73,10 +124,10 @@ struct ContentView: View {
                             ScrollView(.vertical, showsIndicators: true) {
                                 VStack(spacing: 10) {
                                     HStack {
-                                        Text("Current selection:\n\(self.languageSelection.uppercased())")
-                                            .font(.system(size: 10, weight: Font.Weight.medium, design: Font.Design.monospaced))
+                                        Text("Current selection:\n\(self.languageSelection.fullLanguageName.uppercased())")
+                                            .font(.system(size: 17, weight: Font.Weight.medium, design: Font.Design.monospaced))
                                             .padding()
-                                            .accessibility(label: Text("Current language is \(self.languageSelection)"))
+                                            .accessibility(label: Text("Current language is \(self.languageSelection.fullLanguageName)"))
                                         Spacer()
                                         Button(action: {
                                             self.showingLanguageSelection = false
@@ -84,13 +135,23 @@ struct ContentView: View {
                                             Text("Done").padding()
                                         }.accessibility(label: Text("Done"))
                                     }
+                                    if self.showSpeechRateSlider {
+                                        Text("Rate of speech")
+                                        Slider(value: self.$speechRate, in: 0...1, step: 0.01).padding(.horizontal).accessibility(label: Text("Rate of speech"))
+                                        
+                                        Text("Pitch")
+                                        Slider(value: self.$speechPitch, in: 0.5...2, step: 0.01)
+                                            .padding(.horizontal).accessibility(label: Text("Pitch"))
+                                            
+                                           
+                                    }
                                     ForEach(self.languages, id: \.self) { row in
-                                        HStack(spacing:10) {
+                                        HStack(spacing: 10) {
                                             ForEach(row, id: \.self) { button in
                                                 Button(action: {
                                                     self.languageSelection = button
                                                 }) {
-                                                    Text(button)
+                                                    Text(button.fullLanguageName)
                                                         .padding()
                                                         .frame(width: 100, height: 40)
                                                         .foregroundColor(Color.white)
@@ -98,25 +159,20 @@ struct ContentView: View {
                                                         .cornerRadius(30)
                                                     
                                                     
-                                                }.accessibility(label: Text(button))
+                                                }.accessibility(label: Text(button.fullLanguageName))
                                             }
                                         }
                                     }
-                                    .padding()
-                                    .accessibility(label: Text("Language Collection"))
+                                    .padding(.all, 5)
                                     
-                                    if self.showSpeechRateSlider {
-                                        Text("Rate of speech")
-                                        Slider(value: self.$speechRate, in: 0...1, step: 0.01).padding(.horizontal).accessibility(label: Text("Rate of speech"))
-                                        Text("Pitch")
-                                        Slider(value: self.$speechPitch, in: 0.5...2, step: 0.01).padding(.horizontal).accessibility(label: Text("Pitch"))
-                                    }
                                     
                                 }
                                 .frame(width: UIScreen.main.bounds.width)
-                            }
+                                
+                            }.padding(.bottom, 20)
                         }
-                    }
+                    }.padding(.top, 40)
+                    
                     Spacer()
                     
                     ScrollView(.vertical, showsIndicators: true) {
@@ -132,7 +188,7 @@ struct ContentView: View {
                                 .accessibility(label: Text("A label containing your text, where it is written — \"\(message)\""))
                             
                             HStack {
-                                TextField("Write here", text: $message)
+                                TextField("", text: $message)
                                     .padding()
                                     .background(Color.purple)
                                     .foregroundColor(Color.black)
@@ -140,7 +196,7 @@ struct ContentView: View {
                                     .keyboardType(.asciiCapable)
                                     .cornerRadius(10)
                                     .padding([.leading, .vertical], 10)
-                                    .accessibility(label: Text("Text input field"))
+//                                    .accessibility(label: Text("Text input field"))
                                 
                                 Button(action: {
                                     self.message = ""
@@ -148,8 +204,9 @@ struct ContentView: View {
                                     Image(systemName: "xmark.square")
                                         .foregroundColor(Color.red)
                                         .font(.largeTitle)
+                                        .padding(5)
                                 }
-                                .padding(.trailing, 5)
+                                
                                 .accessibility(label: Text("Clear input field"))
                                 
                             }
@@ -160,12 +217,14 @@ struct ContentView: View {
                             }) {
                                 Text("Speak")
                                     .padding()
-                                    .background(Color.pink)
+                                    .background(Color.green)
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 30, weight: .thin, design: .serif))
                                     .cornerRadius(10)
-                                    .accessibility(label: Text("\"Speak\""))
-                                }
+                                    .padding()
+                                    .accessibility(hint: Text("Tap this to speak"))
+                                
+                            }
                             .shadow(radius: 3)
                         }
                         .padding(.bottom, keyboard.currentHeight)
@@ -173,17 +232,18 @@ struct ContentView: View {
                     }
                 }
             }
+            .edgesIgnoringSafeArea(.vertical)
         }
         
     }
-  
-    func speak(text: String, language: String, rate: Float = 0.5, pitch: Float = 0.5) {
+    
+    func speak(text: String, language: Languages, rate: Float = 0.5, pitch: Float = 0.5) {
         var textToSay = text
         if textToSay.count <= 0 {
             textToSay = "Digital Dialectics."
         }
         let utterance = AVSpeechUtterance(string: textToSay)
-        utterance.voice = AVSpeechSynthesisVoice(language: language)
+        utterance.voice = AVSpeechSynthesisVoice(language: language.rawValue)
         utterance.rate = rate
         utterance.pitchMultiplier = pitch
         
