@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4923FF07249842D6000D2805 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923FF06249842D6000D2805 /* KeyboardResponder.swift */; };
 		4956FEF823C4BFC200BD5F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */; };
 		4956FEFA23C4BFC200BD5F25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */; };
 		4956FEFD23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4956FEFB23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4923FF06249842D6000D2805 /* KeyboardResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		4956FEF423C4BFC200BD5F25 /* Digital Accents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Accents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		4956FEF623C4BFC200BD5F25 /* Digital-Accents */ = {
 			isa = PBXGroup;
 			children = (
+				4923FF06249842D6000D2805 /* KeyboardResponder.swift */,
 				4956FEF723C4BFC200BD5F25 /* AppDelegate.swift */,
 				4956FEF923C4BFC200BD5F25 /* SceneDelegate.swift */,
 				4956FEFE23C4BFC200BD5F25 /* ContentView.swift */,
@@ -315,6 +318,7 @@
 				4956FEFD23C4BFC200BD5F25 /* Digital_Accents.xcdatamodeld in Sources */,
 				4956FEF823C4BFC200BD5F25 /* AppDelegate.swift in Sources */,
 				4956FEFF23C4BFC200BD5F25 /* ContentView.swift in Sources */,
+				4923FF07249842D6000D2805 /* KeyboardResponder.swift in Sources */,
 				4956FEFA23C4BFC200BD5F25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
 				PRODUCT_NAME = "Digital Accents";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -499,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "world.smalli.Digital-Accents";
 				PRODUCT_NAME = "Digital Accents";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
